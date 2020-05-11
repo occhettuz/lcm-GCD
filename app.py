@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request
 from algo import GCD, lcm
 
-app = Flask(__name__,
-	static_folder='static',
-	template_folder='Templates')
+app = Flask(__name__)
 
 @app.route('/', methods=['post', 'get'])
 def index():
